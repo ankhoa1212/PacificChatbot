@@ -43,7 +43,7 @@ def write_to_file(input_filename = "url_list.txt", output_filename = "data.json"
         url_list = input_file.readlines()
     all_url_data = []
     for url in url_list:
-        url_data = url_to_dict(url)
+        url_data = url_to_dict(url.strip())
         all_url_data.append(url_data)
     with open(output_filename, "a") as output_file:
         json.dump(all_url_data, output_file, indent=4)
