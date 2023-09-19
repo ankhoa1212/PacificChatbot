@@ -1,0 +1,84 @@
+{
+  "electric-vehicle-faq": [
+    {
+      "question": "Is a permit required?",
+      "answer": ""
+    },
+    {
+      "question": "What is the cost?",
+      "answer": " $1/hr while charging. Once charged, a $2/hour parking fee will be incurred after a grace period."
+    },
+    {
+      "question": "Are chargers available to the public?",
+      "answer": " Yes, the public can use chargers after business hours, weekdays after 5pm and weekends when no permit is required."
+    },
+    {
+      "question": "What type of chargers are they?",
+      "answer": " All chargers are Level 2."
+    }
+  ],
+  "judicial-clerkship-faq": [
+    {
+      "question": "What    is    a    Judicial    Clerkship?",
+      "answer": "  A    judicial    clerkship    is    a    full-\u00ad\u2010time    position    working    for    a    federal    or    state    judge,    usually    (but    not always)    right    after    finishing    law    school.        Clerkships    may    be    with    any    level    of    court.  "
+    },
+    {
+      "question": "What    is    the    Value    of    a    Law    Clerk    Experience?",
+      "answer": "  Judicial    clerkships    offer    new    graduates    the    opportunity    to    work    closely    with    a    judge,    gaining unparalleled    insight    into    the    judicial    process    and    broad    exposure    to    various    areas    of    the    law. Many    lawyers    view    clerkships    as    the    most    prestigious    and    distinguished    way    to    begin    a    legal career,    and    most    employers    highly    value    the    learning    experience    judicial    clerkships    provide. "
+    },
+    {
+      "question": "What    Are    the    Duties    of    Law    Clerks?",
+      "answer": "  The    judicial    clerk    is    an    assistant    to    the    judge    and    performs    a    broad    range    of    functions    that includes    researching,    drafting    memoranda    and    opinions,    editing,    proofreading,    and    verifying citations.    Clerks    often    attend    conferences    in    chambers    with    the    attorneys    in    a    case    and    engage in    conferences    and    discussions    with    the    judge    regarding    pending    cases.        Law    clerks    also    are expected    to    work    cooperatively    with    fellow    legal    staff    and    court    personnel.   Clerks    may    also    assist    their    judge    with    special    projects    such    as    speeches    and    publications, committee    work,    mediation,    classroom    preparation,    and    formal    ceremonial    events.        The    work of    a    clerk    can    include    a    myriad    of    opportunities    to    develop    several    skills    valuable    in    a    future    law career. "
+    }
+  ],
+  "sample": [
+    {
+      "question": "Why do I have to attend Orientation?",
+      "answer": " New Student Orientation is mandatory for all incoming students. Students will learn about the academic expectations of their major and school, connect with their fellow new students, and learn about what it means to be a part of the Pacific community."
+    },
+    {
+      "question": "How do I make a reservation for New Student and Family Orientation?",
+      "answer": " You can make an Orientation reservation through your Admitted Student Portal (connect.pacific.edu). Log into your dashboard, then click \u201cRegister for Orientation.\u201d"
+    },
+    {
+      "question": "What if I want to change my major?",
+      "answer": " New students that request to change their major must reach out to the Office of Admissions and must do so prior to New Student Orientation. Students wishing to change their major after New Student Orientation need wait until they meet with their Academic Advisor on Wednesday August 23."
+    },
+    {
+      "question": "Can I bring someone with me to Orientation?",
+      "answer": " During Orientation, we offer a Family Orientation program. Students can register up to two guests to participate in that program. There is a $60 fee for each participating guest. Students can register their family members ahead of Orientation in their Admitted Students Portal or onsite during Orientation Check-in August 19-20."
+    },
+    {
+      "question": "Will I receive an email confirmation of my reservation?",
+      "answer": " Yes! In fact, you\u2019ll get two confirmations. Immediately after you make a reservation, you\u2019ll be sent a confirmation through the portal. A few days prior to your Orientation session, you will be sent another confirmation with details on parking, where to check-in and the schedule of the day. Please be sure to check your Pacific email for details."
+    },
+    {
+      "question": "When is Orientation for New Students and Family Members?",
+      "answer": " There will be mandatory pre-Orientation activities for new students beginning Sunday, August 20 and then new students will participate in two full days of Orientation programming across Monday, August 21 and Tuesday, August 22. All family members are invited to attend welcome and pre-Orientation activities on Sunday, August 20 with their student, but only registered family members will be able to attend the official New Family Orientation program on Monday, August 21. "
+    },
+    {
+      "question": "Can I stay overnight in the Pacific residence hall rooms for Orientation if I don\u2019t live on-campus?",
+      "answer": " Unfortunately, no. We will not be able to provide overnight accommodation for students not living on- campus during the academic year to participate in Orientation and other Pacific Welcome Week activities. Students who will live in the residential communities during the academic year will move into their assigned living spaces August 19-20. Sunscreen, hat, sunglasses, wear comfortable clothing \u2013 It can be very hot on campus during the summer, and you will be spending some time outside, but it is cooler inside. Students will be provided with a reusable water bottle at check-in, but they are welcome to bring their own. A laptop \u2013 recommended for Academic Advising on Wednesday, August 23 if students intend to make adjustments to their Fall 2023 schedule. A tablet or phone will not suffice for course enrollment. A notebook and pen if you would like to take notes A phone charger or portable charger \u2013 We do not have any to provide. Any medications you may need New Student and Family Orientation Frequently Asked Questions"
+    },
+    {
+      "question": "What if I cannot attend Orientation?",
+      "answer": " Orientation is a required event for all new students living on and off-campus. For students who have work commitments, most employers understand the importance of this event for college students. We strongly suggest you make attendance at Orientation a priority. This is a critical step to take for your pathway to success in college. If you are unable to attend Orientation, please contact our office asap at orientation@pacific.edu."
+    },
+    {
+      "question": "When will I receive the Orientation schedule?",
+      "answer": " The schedule of events for Pacific Welcome Week (Move-in, New Student and Family Orientation, and Week of Welcome) will be available on the Pacific website and a physical copy will be available in- person during Orientation check-in."
+    },
+    {
+      "question": "What if I miss my Orientation date or need to cancel?",
+      "answer": " Refunds cannot be made and we will not offer an alternative Orientation session. We strongly suggest you make attendance at Orientation a priority."
+    },
+    {
+      "question": "What if I did not take my Placement exams before Orientation?",
+      "answer": " If you were not able to take Placements before Orientation, that is no problem. You will have two opportunities to take the necessary Placement exams on Sunday, August 20 from 11am-1pm and based on these scores, your academic program will provide you with a revised schedule during your Academic Advising meeting on Wednesday, August 23."
+    },
+    {
+      "question": "How do I check-in for Orientation?",
+      "answer": " New students and families are required to check-in for Orientation on Saturday August 19 and Sunday August 20. This is the only time Orientation check-in will be available."
+    }
+  ]
+}
