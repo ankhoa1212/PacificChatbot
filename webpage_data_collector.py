@@ -2,7 +2,7 @@ import json
 import urllib.request
 from bs4 import BeautifulSoup
 
-def url_to_html(url: str, encoding = "utf8"):
+def url_to_html(url: str, encoding = "utf-8"):
     """returns html code from url input, assuming the page is using utf8 encoding"""
     request = urllib.request.urlopen(url)  # send url request
     bytes = request.read()  # read bytes from url request
@@ -47,6 +47,18 @@ def write_to_file(input_filename = "url_list.txt", output_filename = "data.json"
         all_url_data.append(url_data)
     with open(output_filename, "a") as output_file:
         json.dump(all_url_data, output_file, indent=4)
+
+def extract_txt_from_json(input_filename = "data.json", output_filename = "data.txt"):
+    """extracts text from input json file to output txt file"""
+    with open(input_filename, "r", encoding="utf-8") as input_file:
+        data = json.load(input_file)
+    with open(output_filename, "a") as output_file:
+        for webpage in data:
+            for text in webpage["body"]:
+                try:
+                    output_file.writelines(text)
+                except UnicodeEncodeError:  # ignore file encoding error
+                    pass
 
 
 write_to_file()
