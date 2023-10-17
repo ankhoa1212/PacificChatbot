@@ -1,16 +1,14 @@
 import json
 import random
-import threading
 import urllib.request
-from datetime import datetime
 from urllib.error import HTTPError, URLError
 from bs4 import BeautifulSoup
 
-def url_to_html(url: str, encoding = "utf-8"):
+def url_to_html(url: str, encoding = "utf-8", timeout_seconds=60):
     """returns html code from url input, assuming the page is using utf8 encoding"""
     html = None
     try:
-        request = urllib.request.urlopen(url)  # send url request
+        request = urllib.request.urlopen(url, timeout=timeout_seconds)  # send url request
         bytes = request.read()  # read bytes from url request
         html = bytes.decode(encoding)  # convert bytes to string
     except (HTTPError, URLError, ValueError, TimeoutError, UnicodeDecodeError) as e:
@@ -67,23 +65,12 @@ def url_to_dict(url: str) -> dict:
 
     return data
 
-def timeout_function():
-    raise TimeoutError(f"Timeout has occurred.")
-
 def url_to_list_of_webpage_links(url: str):
     url_list = set()
     exclude_list = ["facebook", "instagram", "google", "messenger", "whatsapp", "oculus"]
     try:
         print(f"sending http request to {url}...")
-        timeout_duration = 60
-        timer = threading.Timer(timeout_duration, timeout_function)
-        try:
-            soup = BeautifulSoup(url_to_html(url), 'html.parser')
-            timer.cancel()
-        except TimeoutError as e:
-            raise TimeoutError(f"{e}")
-        finally:
-            timer.cancel()
+        soup = BeautifulSoup(url_to_html(url), 'html.parser')
         print("html received")
         for link in soup.find_all("a"):
             url = str(link.get("href"))
