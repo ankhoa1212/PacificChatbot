@@ -26,12 +26,12 @@ def url_to_dict(url: str) -> dict:
     soup = BeautifulSoup(html, 'html.parser')
     data = {}
     data["url"] = url
-    if soup.find("title"):
+    if soup.find("title"):  # html might not have title
         data["title"] = str(soup.find("title").get_text(strip=True))
 
     # parse body into separate elements
     body_text = []
-    if soup.find("body"):
+    if soup.find("body"):  # html might not have body
         for text in soup.find("body").children:
             text = text.get_text(strip=True)
             remove = []
@@ -118,7 +118,7 @@ def extract_txt_from_json(input_filename = "data.json", output_filename = "data.
         data = json.load(input_file)
     with open(output_filename, "a") as output_file:
         for webpage in data:
-            if webpage:
+            if webpage:  # webpage may be None
                 for text in webpage["body"]:
                     try:
                         output_file.writelines(text)
