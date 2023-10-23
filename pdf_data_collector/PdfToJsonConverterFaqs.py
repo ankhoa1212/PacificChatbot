@@ -45,14 +45,14 @@ def read_file_names(path):
     try:
         file_names = [entry.name for entry in os.scandir(path) if entry.is_file()]
         if file_names:
-            print("Files found")
+            print("Files found", file_names)
         return file_names
     except Exception as e:
         print(f"An error occurred while listing files: {e}")
         return []
 
 def main():
-    directory_path = r"T:\DevTools\Semester-3\COMP-293\pdfs"            #Replace with your pdf folder path
+    directory_path = r"T:\DevTools\Semester-3\COMP-293\WebpageDataCollector\pdf_data_collector\pdfs"            #Replace with your pdf folder path
     file_names= read_file_names(directory_path)
     data={}
     for file_name in file_names: 
