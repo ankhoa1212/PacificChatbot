@@ -112,6 +112,19 @@ def extract_txt_from_json(input_filename = "data.json", output_filename = "data.
                     except UnicodeEncodeError:  # ignore file encoding error
                         pass
 
+def extract_documents_dict_from_json(input_filename: str):
+    docs = {}
+    with open(input_filename, "r") as input_file:
+        data = json.load(input_file)
+    for webpage in data:
+        if webpage:  # webpage may be None
+            if webpage["title"]:
+                docs[webpage["title"]] = webpage["data"]  # may be in form of list
+            else:
+                docs[webpage["url"]] = webpage["data"]  # may be in form of list
+    print(docs)
+    return docs
+
 def append_url_list(url: str, url_list: set, output_filename: str, tabs=0):
     if tabs > 1:
         return
@@ -167,7 +180,7 @@ def shortened_url_list(input_file: str, output_file: str, num_urls: int):
 
     with open(output_file, 'w') as file:
         file.writelines(selected_lines)
-    # Now, selected_lines contains num_urls random lines from the file
+    # selected_lines contains num_urls random lines from the file
 
 # print("generating url list...")
 # generate_url_list()
@@ -178,3 +191,4 @@ def shortened_url_list(input_file: str, output_file: str, num_urls: int):
 # print("converting json to txt...")
 # extract_txt_from_json("extra_data.json", "extra_data.txt")
 # print("done")
+# extract_documents_dict_from_json("data.json")
